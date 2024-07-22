@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<head>
+    <link rel="stylesheet" href="finalProject.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>WEB-115 Final Project</title>
+    <script src="projectJS.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script></head>
+
+<body id="body2">
+    <h1 style="background-color: #d84980;">Your Meal Plan</h1>
+
+    <!--div for content to be placed from variables-->
+    <div id="createdContent">
+       
+        <table id="gainMuscle">
+            <h2>Your meal plan for gaining muscle mass: </h2>
+            <tr>
+                <th>Day: </th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td>oatmeal </td>
+                <td>eggs </td>
+                <td>protein pancakes</td>
+                <td>protein oatmeal</td>
+                <td>yogurts with oats</td>
+                <td>oatmeal</td>
+                <td>waffles</td>
+            </tr>
+            <tr>
+                <td>Snack</td>
+                <td>yogurt</td>
+                <td>apples with peanut butter</td>
+                <td>trail mix</td>
+                <td>carrots and celery with hummus</td>
+                <td>yogurt</td>
+                <td>trail mix</td>
+                <td>rice cakes</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>grilled chicken and rice</td>
+                <td>turkey wrap</td>
+                <td>tuna salad</td>
+                <td>grilled chicekn and rice</td>
+                <td>turkey and avocoado sandwhich</td>
+                <td>chicken and veggie stir fry</td>
+                <td>salad</td>
+            </tr>
+            <tr>
+                <td>Snack</td>
+                <td>protein shake</td>
+                <td>protein bar</td>
+                <td>protein smoothie</td>
+                <td>trail mix</td>
+                <td>protein shake</td>
+                <td>nuts and a pear</td>
+                <td>cottage cheese and peaches </td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>salmon and rice</td>
+                <td>beef stir fry </td>
+                <td>pork chops</td>
+                <td>salmon and rice</td>
+                <td>tilapia</td>
+                <td>shrimp with quinoa</td>
+                <td>chicken and potatos</td>
+            </tr>
+        </table><br>
+</div>
+
+    <!--button to clear content-->
+    <button id="clear" type="button" onclick="">Clear Meal Plan</button>
+
+    <!--button to print content-->
+    <button type="button" onclick="window.print();">Print Meal Plan</button>
+
+    <!--button to download content-->
+    <button id="download" type="button">Download Meal Plan</button>
+
+</body>

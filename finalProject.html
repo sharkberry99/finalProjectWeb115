@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="finalProject.css">
+    <script src="projectJS.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script></head>
+</head>
+<header>
+    <!--Build the banner-->
+    <div id="header">
+        <p>Jesus Felix</p>
+        <p>WEB-115-0001</p>
+        <hr>
+        <div id="logoBanner">
+            <img src="Feliz.png"  alt="feliz fit logo" width="200">
+        </div>
+        <br>
+            <div id="buildBanner">
+                <h1>Build Your Meal Plan</h1>
+            </div>
+        </div>
+</header>
+
+<body id="body1">
+    <br><div id="frame">
+
+        <!--create the banner for the form-->
+        <div id="formBanner">
+        <h3>Please enter a little about yourself for us to begin: </h3>
+        </div>
+
+        <!--create the form-->
+        <form id="form">
+            <br>
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+            <br><br>
+            <label for="email">* Email: </label>
+            <input  type="email" id="email" required>
+            <br><br>
+            <label for="goals">Goal For The Week: </label>
+            <select id="goals">
+                <option value="option 0">Select a personal goal</option>
+                <option value="option 1">Lose Weight</option>
+                <option value="option 2">Gain Muscle</option>
+            </select>
+            <br><br><p>* Email is a required field</p>
+
+            <!--submit button to create new webapage on the fly-->
+            <input type="submit" id="submit" value="Submit">
+        </form>
+
+        <script>
+            document.getElementById('submit').addEventListener('click', newPage);
+                function newPage() {
+                    userName = document.getElementById("name").value;
+                    myText = ("<html>\n<head>\n<title>Meal Plan</title>\n</head>\n<body>\n");
+                    myText += ("Hello, " + userName + " below is your daily meal plan: ");
+                    myText += ("</body>\n</html>");
+
+                    flyWindow = window.open('myPop.html', 'myPop', 'fullscreen=yes');
+                    flyWindow.document.write(content);
+            }
+        </script>
+
+    </div>
+</body>
+<br><br><hr>
+<footer>Copyright © 2024 - 2024 Perfcetly Portioned Fitness, LLC.</footer>

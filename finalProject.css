@@ -1,0 +1,52 @@
+#header {
+    background: #d84980;
+    height: auto;
+    padding: 15px 15px;
+}
+#formBanner {
+    background: #d84980;
+    width: auto;
+    padding: 5px 20px;
+}
+#logoBanner {
+    background-color: rgb(241, 231, 231);
+    height: fit-content;
+    text-align: left;
+}
+#buildBanner {
+    border: solid black 2px;
+}
+#frame {
+    background-color: white;
+    height: auto;
+    width: fit-content;
+    padding: 20px 25px;
+    text-align: center;
+    ;
+}
+h1 {
+    color:white;
+    font-family: Arial;
+    text-align: center;
+}
+h3 {
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+p {
+    color: black;
+    font-family: Arial;
+    text-align: left;
+}
+#body1 {
+    background-image: url("healthyfoods.jpg");
+}
+footer {
+    text-align: right;
+    
+}
+table, th, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
